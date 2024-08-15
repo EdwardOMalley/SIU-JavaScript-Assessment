@@ -12,7 +12,7 @@ function mostFrequentChar(str) {
             temp = characters[j]
             if (temp.char == char) {
                 characters[j].num++;
-                continue
+                break
             }
             else {
 
@@ -24,8 +24,8 @@ function mostFrequentChar(str) {
             
         }
 
+
     }
-}
 // test cases
 // mostFrequentChar('bookeeper'); // -> 'e'
 // mostFrequentChar('mississippi'); // -> 'i'. 'i' and 's' appear with same frequency in 'mississippi' but 'i' appears first!
